@@ -51,6 +51,7 @@ p {
 }
 
 .timer__wrapper {
+  padding: 2em;
   border-radius: 24px;
   background-color: var(--text-shadow-color);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
@@ -97,6 +98,30 @@ p {
 
 .button:disabled {
   background-color: rgb(170, 164, 164);
+}
+
+.split-timer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.split-timer-title,
+.lap {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.split-timer-title .title,
+.lap span {
+  flex: 1;
+  text-align: center;
+}
+
+.split-timer-title .title {
+  font-weight: bold;
 }
 
 /* .button.active {
